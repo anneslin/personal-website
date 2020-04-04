@@ -1,0 +1,51 @@
+a:link {
+	color:#404040;
+	transition:0.25s;
+}
+a:hover {
+	color:#b3a296;
+}
+a:visited {
+	color: #404040;
+}
+.icons{
+letter-spacing: 10px;
+margin-right: -10px;
+font-size: 1em;
+}
+i {
+	transition:0.25s;
+}
+i.linked:hover {
+	color:#b3a296;
+}
+
+.mobile {
+	display: none;
+}
+
+@media (max-width: 840px) {
+
+  .homeContainer {
+	text-align: left;
+	font-size: 1em;	
+  }
+  .about {
+	width: 68%;
+  }
+  .icons {
+	letter-spacing: 20px;
+	font-size: 1.2em;
+  }
+  .mobile {
+	font-size: .8em;
+	display: block;
+  }
+
+}
+
+@media (max-width: 400px) {
+	.homeContainer{
+	font-size: .85em;	
+  }
+}

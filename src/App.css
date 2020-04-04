@@ -20,3 +20,16 @@
 .App-link {
   color: #09d3ac;
 }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/imgs/homepic1.jpg);
+  background-position: absolute; 
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'News Cycle', sans-serif;
+  color: #404040;
+}
