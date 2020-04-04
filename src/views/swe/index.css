@@ -1,0 +1,70 @@
+.introContent{
+  padding: 5vh 8vw 5vh calc(13vw + 300px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  min-width: 475px;
+}
+.title{
+  letter-spacing: 5px;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.title1{
+  width:200px;
+  float:right;
+}
+.sub-title{
+  text-align: right;
+  font-family: 'News Cycle', sans-serif;
+  position: relative;
+  font-size: .6em;
+  letter-spacing: 0px;
+  margin-top: 10px;
+  min-width: 400px;
+  width: 100%;
+  float: right;
+  top:-15px;
+  right: 5px;
+}
+
+.title1 img{
+  max-width: 100%;
+  min-width: 100%;
+}
+.uptopImg {
+  max-width: 125px;
+  margin-top: -38px;
+  margin-bottom: 3px;
+}
+.blurb2{
+  text-align: right;
+  font-family: 'News Cycle', sans-serif;
+  position: relative;
+  font-size: .8em;
+  margin-top: 10px;
+  min-width: 400px;
+  width: 100%;
+  float: right;
+  top:-15px;
+  right: 5px;
+}
+.icn{
+	position: relative;
+	width: 100%;
+	float: right;
+	text-align: right;
+}
+
+.icns{
+  max-width: 60px;
+  min-width: 10px;
+  height: 15px;
+  width: auto;
+  margin: 2.5px;
+}
+

@@ -37,9 +37,9 @@ export const subSectionUrl = {
 export const subSectionText = {
   [subSections.body]: "body",
   [subSections.words]: "words",
-  [subSections.domio]: "Dōmio",
-  [subSections.clark]: "Clark",
-  [subSections.uptop]: "UpTop",
+  [subSections.domio]: "dōmio",
+  [subSections.clark]: "clark",
+  [subSections.uptop]: "uptop",
   [subSections.relatedCourses]: "related courses",
   [subSections.currentlyReading]: "currently reading"
 }

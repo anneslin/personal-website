@@ -24,7 +24,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url(./assets/imgs/homepic1.jpg);
+  display: flex;
   background-position: absolute; 
   background-position: center center;
   background-attachment: fixed;

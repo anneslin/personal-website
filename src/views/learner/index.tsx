@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import "./index.css";
 import Descriptive from "./../../components/descriptive";
 
-const Learner = ({ isCourse }: { isCourse: boolean }) => 
+const Learner = ({ isCourse = false }: { isCourse?: boolean }) => 
   <Descriptive>
       {isCourse ? (
         <CourseWork>

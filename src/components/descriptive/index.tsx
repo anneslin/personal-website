@@ -13,7 +13,7 @@ const Container = styled.div`
   text-align: right;
   font-family: 'News Cycle', sans-serif;
   height:100vh;
-  margin-left: 35vw;
+  margin-left: calc(13vw + 300px);
 `;
 const Content = styled.div`
 	text-align: right;
