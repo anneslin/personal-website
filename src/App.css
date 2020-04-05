@@ -1,5 +1,4 @@
 .container {
-  width: 100vw;
   height: 100vh;
   display: flex;
   background-position: absolute; 
@@ -10,4 +9,5 @@
   font-family: 'News Cycle', sans-serif;
   color: #404040;
   background-image: url(./assets/imgs/homepic1.jpg);
+  overflow: auto;
 }

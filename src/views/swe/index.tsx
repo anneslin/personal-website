@@ -6,16 +6,17 @@ const BASE_IMG_URL = 'http://anneslin.com/assets/imgs/logos/';
 
 const Swe = ({ uptop = false, clark = false, domio = false }: { uptop?: boolean, clark?: boolean, domio?: boolean }) => {
   const content: careerContent | null = uptop
-  ? uptopContent
-  : clark 
-    ? clarkContent
-    : domio
-      ? domioContent
-      : null;
+    ? uptopContent
+    : clark
+      ? clarkContent
+      : domio
+        ? domioContent
+        : null;
   return content && (
-    <div className='introContent'>
-      <div className='title'>
-        <div className='title1'>
+    <div className='careerContainer'>
+      <div className="careerSpacer" />
+      <div className='titleContainer'>
+        <div className='title'>
           <a href={content.companyUrl} target="_blank">
             <img src={`${BASE_IMG_URL}${content.companyLogo}`} role="presentation" title={content.companyName} /></a>
         </div>
@@ -23,19 +24,12 @@ const Swe = ({ uptop = false, clark = false, domio = false }: { uptop?: boolean,
           {content.title}
         </div>
       </div>
-      <div className="scrollableContent">
-        <div className='blurb'>
-          <div className="icn">
-            {content.techs.map(x =>
-              <img className="icns" src={`${BASE_IMG_URL}${techIconFiles[x]}`} role="presentation" title={techTitles[x]} />
-            )}
-            <br />
-            <br />
-          </div>
-          <br />
-          {content.description}
-        </div>
+      <div>
+        {content.techs.map(x =>
+          <img className="icn" src={`${BASE_IMG_URL}${techIconFiles[x]}`} role="presentation" title={techTitles[x]} />
+        )}
       </div>
+      <div className="blurb">{content.description}</div>
     </div>
   );
 }

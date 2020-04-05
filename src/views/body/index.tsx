@@ -17,7 +17,7 @@ const Body = () => {
           </div>
       </div>
       {range.map((_, i) =>
-        <img src={`${BASE_IMG_URL}${i + 1}.jpg`} role="presentation" style={{ height: '100vh' }} />
+        <img src={`${BASE_IMG_URL}${i + 1}.jpg`} role="presentation" className="modelingPhoto" />
       )}
     </div>
   );

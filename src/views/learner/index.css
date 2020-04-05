@@ -1,9 +1,3 @@
 ::-webkit-scrollbar { 
   display: none; 
 }
-i.arrow{
-position: absolute;
-top: calc(45vh + 235px);
-left:303px;
-font-size: 10px;
-}

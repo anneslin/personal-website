@@ -14,6 +14,9 @@ const Container = styled.div`
   font-family: 'News Cycle', sans-serif;
   height:100vh;
   margin-left: calc(13vw + 300px);
+  @media (max-width: 768px) {
+    margin-left: 10vw;
+  }
 `;
 const Content = styled.div`
 	text-align: right;

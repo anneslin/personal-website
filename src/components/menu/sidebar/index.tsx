@@ -1,29 +1,18 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { sections, subSections, sectionText, sectionUrl, subSectionText, subSectionUrl } from './constants';
-import { theme } from './../../themeStyleConstants';
+import { sections, subSections, sectionText, sectionUrl, subSectionText, subSectionUrl } from '../constants';
+import { theme } from '../../../themeStyleConstants';
 import { Link } from "react-router-dom";
+import { getSubSections } from '../utils';
 
 const { primary, secondary, background } = theme;
 const sideBarSections = [sections.creative, sections.softwareEngineer, sections.learner];
 
 const SideBar = ({ underlay }: { underlay: boolean }) => {
   const [selectedSection, setSelectedSection] = useState(null as sections | null);
-  const getSubSections = () => {
-    switch (selectedSection) {
-      case sections.creative:
-        return [subSections.body, subSections.words];
-      case sections.softwareEngineer:
-        return [subSections.domio, subSections.clark, subSections.uptop];
-      case sections.learner:
-        return [subSections.relatedCourses, subSections.currentlyReading];
-      default:
-        return [];
-    }
-  };
 
   const getSubSectionItems = () => {
-    const subSects = getSubSections();
+    const subSects = getSubSections(selectedSection);
     return selectedSection && subSects.map((x: subSections) =>
       x === subSections.words ? (
         <SubSectionItem href='https://medium.com/@annelin' target="_blank">words</SubSectionItem>
@@ -68,6 +57,9 @@ const SideBarContainer = styled.div`
   justify-content: center;
   left: 8vw;
   z-index: 2;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const Underlay = styled.div`
   background: ${background};

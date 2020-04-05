@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 import Home from './views/home';
 import Learner from './views/learner';
-import SideBar from './components/sidebar';
+import SideBar from './components/menu/sidebar';
+import TopBar from './components/menu/topbar';
 import Swe from './views/swe';
 import Body from './views/body';
 import { theme } from "./themeStyleConstants";
@@ -20,6 +21,7 @@ const App = () => {
   const style = (swePath || creativePath) ? { backgroundColor: background, backgroundImage: 'none' } : {}
   return (
     <div className="container" style={style}>
+      <TopBar underlay={creativePath != null} />
       <SideBar underlay={creativePath != null} />
       <Switch>
         <Route path="/creative/body" component={Body} />

@@ -32,3 +32,20 @@ a {
 a:hover{
 	color:#b3a296;
 }
+
+.modelingPhoto {
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .introContentPhoto {
+    overflow-y: auto;
+    flex-direction: column;
+  }
+  .textContainer {
+    display: none;
+  }
+  .modelingPhoto {
+    width: 100vw;
+    height: auto;
+  }
+}

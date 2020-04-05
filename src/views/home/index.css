@@ -19,33 +19,3 @@ i {
 i.linked:hover {
 	color:#b3a296;
 }
-
-.mobile {
-	display: none;
-}
-
-@media (max-width: 840px) {
-
-  .homeContainer {
-	text-align: left;
-	font-size: 1em;	
-  }
-  .about {
-	width: 68%;
-  }
-  .icons {
-	letter-spacing: 20px;
-	font-size: 1.2em;
-  }
-  .mobile {
-	font-size: .8em;
-	display: block;
-  }
-
-}
-
-@media (max-width: 400px) {
-	.homeContainer{
-	font-size: .85em;	
-  }
-}
