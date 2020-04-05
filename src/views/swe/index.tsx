@@ -26,7 +26,6 @@ const Swe = ({ uptop = false, clark = false, domio = false }: { uptop?: boolean,
       <div className="scrollableContent">
         <div className='blurb'>
           <div className="icn">
-					<br />
             {content.techs.map(x =>
               <img className="icns" src={`${BASE_IMG_URL}${techIconFiles[x]}`} role="presentation" title={techTitles[x]} />
             )}

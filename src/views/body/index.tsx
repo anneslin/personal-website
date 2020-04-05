@@ -1,9 +1,8 @@
 import React from 'react';
 import "./index.css"
-const range = new Array(13);
+const range = new Array(13).fill(0);
 const BASE_IMG_URL = 'http://anneslin.com/assets/imgs/body/';
 const Body = () => {
-
   return (
     <div className='introContentPhoto'>
         <div className="spacer" />
@@ -18,7 +17,7 @@ const Body = () => {
           </div>
       </div>
       {range.map((_, i) =>
-        <img src={`${BASE_IMG_URL}${i}.jpg`} role="presentation" style={{ height: '100vh' }} />
+        <img src={`${BASE_IMG_URL}${i + 1}.jpg`} role="presentation" style={{ height: '100vh' }} />
       )}
     </div>
   );
