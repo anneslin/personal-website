@@ -1,17 +1,39 @@
 import React from 'react';
 import './App.css';
-import Routes from './Routes';
+import {
+  Switch,
+  Route,
+  withRouter,
+  useRouteMatch
+} from "react-router-dom";
+import Home from './views/home';
+import Learner from './views/learner';
+import SideBar from './components/sidebar';
+import Swe from './views/swe';
+import Body from './views/body';
 import { theme } from "./themeStyleConstants";
 
 const { background } = theme;
-
 const App = () => {
-  const style = true ? { backgroundImage: 'url(./assets/imgs/homepic1.jpg)' } : { backgroundColor: background }
+  const swePath = useRouteMatch(["/swe/domio", "/swe/clark", "/swe/uptop"]);
+  const creativePath = useRouteMatch("/creative/body");
+  const style = (swePath || creativePath) ? { backgroundColor: background, backgroundImage: 'none' } : {}
   return (
     <div className="container" style={style}>
-      <Routes/>
+      <SideBar underlay={creativePath != null} />
+      <Switch>
+        <Route path="/creative/body" component={Body} />
+        <Route path="/creative/words" component={Home} />
+        <Route path="/swe/domio"><Swe domio /></Route>
+        <Route path="/swe/uptop"><Swe uptop /></Route>
+        <Route path="/swe/clark"><Swe clark /></Route>
+        <Route path="/learner/coursework"><Learner isCourse /></Route>
+        <Route path="/learner/reading"><Learner /></Route>
+        <Route path="/" component={Home} />
+      </Switch>
     </div>
   );
 }
 
-export default App;
+
+export default withRouter(App);

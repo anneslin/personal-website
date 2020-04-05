@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 const { primary, secondary, background } = theme;
 const sideBarSections = [sections.creative, sections.softwareEngineer, sections.learner];
 
-const SideBar = () => {
+const SideBar = ({ underlay }: { underlay: boolean }) => {
   const [selectedSection, setSelectedSection] = useState(null as sections | null);
-
   const getSubSections = () => {
     switch (selectedSection) {
       case sections.creative:
@@ -26,20 +25,20 @@ const SideBar = () => {
   const getSubSectionItems = () => {
     const subSects = getSubSections();
     return selectedSection && subSects.map((x: subSections) =>
-    x === subSections.words ? (
-    <SubSectionItem href='https://medium.com/@annelin' target="_blank">words</SubSectionItem>
-    ) : (
-      <SubSectionItemLink
-        to={`/${sectionUrl[selectedSection]}/${subSectionUrl[x]}`}>
-        {subSectionText[x]}
-      </SubSectionItemLink>
-    ));
+      x === subSections.words ? (
+        <SubSectionItem href='https://medium.com/@annelin' target="_blank">words</SubSectionItem>
+      ) : (
+          <SubSectionItemLink
+            to={`/${sectionUrl[selectedSection]}/${subSectionUrl[x]}`}>
+            {subSectionText[x]}
+          </SubSectionItemLink>
+        ));
   };
 
   return (
     <SideBarContainer>
-        <Underlay style={{opacity: 0}}/>
-        <Content>
+      <Underlay style={{ opacity: underlay ? 0.75 : 0 }} />
+      <Content>
         <Name href="/">
           anne lin
         </Name>
@@ -52,7 +51,7 @@ const SideBar = () => {
         <SubSectionItemsContainer>
           {getSubSectionItems()}
         </SubSectionItemsContainer>
-        </Content>
+      </Content>
     </SideBarContainer>
   );
 };
@@ -68,6 +67,7 @@ const SideBarContainer = styled.div`
   align-items: center;
   justify-content: center;
   left: 8vw;
+  z-index: 2;
 `;
 const Underlay = styled.div`
   background: ${background};

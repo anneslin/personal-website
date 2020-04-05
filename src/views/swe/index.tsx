@@ -2,7 +2,7 @@ import React from 'react';
 import "./index.css";
 import { careerContent, uptopContent, clarkContent, domioContent, techIconFiles, techTitles } from "./constants";
 
-const BASE_IMG_URL = 'http://anneslin.com/assets/img/logos/';
+const BASE_IMG_URL = 'http://anneslin.com/assets/imgs/logos/';
 
 const Swe = ({ uptop = false, clark = false, domio = false }: { uptop?: boolean, clark?: boolean, domio?: boolean }) => {
   const content: careerContent | null = uptop
