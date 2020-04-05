@@ -101,7 +101,7 @@ const SectionItemsContainer = styled.div`
 const SectionItem = styled.div`
   flex: 1;
   text-align: center;
-  font-size: .9rem;
+  font-size: .8rem;
   margin: 0 .5rem;
   letter-spacing: 1.5px;
   transition: 0.25s;
