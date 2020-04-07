@@ -13,7 +13,7 @@ const Body = () => {
           <div className='blurb'>
             unsigned model
             <br/>
-            <a href="mailto:anne.lin@berkeley.edu">email</a> for rates
+            <a href="mailto:anne.lin@berkeley.edu" className="decoratedLink">email</a> for rates
           </div>
       </div>
       {range.map((_, i) =>

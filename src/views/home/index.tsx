@@ -5,7 +5,7 @@ import Descriptive from "./../../components/descriptive";
 const Home = () => 
   <Descriptive>
       <div>
-        Graduated from the University of California, Berkeley 2017:
+        Hi, I'm Anne and I like working with React to build beautiful sites. Graduated from the University of California, Berkeley 2017:
         major in Applied Mathematics, major concentration and minor in Computer Science.
         <br />
         <a href="http://anneslin.com/assets/files/resume.pdf" download>résumé</a>

@@ -76,7 +76,6 @@ const Content = styled.div`
 `;
 const Name = styled.a`
   color: ${primary};
-  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 4px;
   font-size: 15px;

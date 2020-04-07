@@ -29,7 +29,7 @@ const Swe = ({ uptop = false, clark = false, domio = false }: { uptop?: boolean,
           <img className="icn" src={`${BASE_IMG_URL}${techIconFiles[x]}`} role="presentation" title={techTitles[x]} />
         )}
       </div>
-      <div className="blurb">{content.description}</div>
+      {content.description}
     </div>
   );
 }

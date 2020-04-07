@@ -11,3 +11,46 @@
   background-image: url(./assets/imgs/homepic1.jpg);
   overflow: auto;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+a:link {
+	color:#404040;
+	transition:0.25s;
+}
+a:hover {
+	color:#b3a296;
+}
+a:visited {
+	color: #404040;
+}
+
+i {
+	transition:0.25s;
+}
+i.linked:hover {
+	color:#b3a296;
+}
