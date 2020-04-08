@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4f97f1e.chunk.css",
+    "main.js": "/static/js/main.fad73494.chunk.js",
+    "main.js.map": "/static/js/main.fad73494.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ac6f0821.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ac6f0821.js.map",
+    "static/js/2.fccea8bc.chunk.js": "/static/js/2.fccea8bc.chunk.js",
+    "static/js/2.fccea8bc.chunk.js.map": "/static/js/2.fccea8bc.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.91a9c552138b7fd2a5d9f5269897c503.js": "/precache-manifest.91a9c552138b7fd2a5d9f5269897c503.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a4f97f1e.chunk.css.map": "/static/css/main.a4f97f1e.chunk.css.map",
+    "static/js/2.fccea8bc.chunk.js.LICENSE.txt": "/static/js/2.fccea8bc.chunk.js.LICENSE.txt",
+    "static/media/clark-matching.mp4": "/static/media/clark-matching.c889d8d4.mp4",
+    "static/media/domio-dnd.mp4": "/static/media/domio-dnd.498f73ac.mp4",
+    "static/media/App.css": "/static/media/homepic1.b6b034b6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac6f0821.js",
+    "static/js/2.fccea8bc.chunk.js",
+    "static/css/main.a4f97f1e.chunk.css",
+    "static/js/main.fad73494.chunk.js"
+  ]
+}
