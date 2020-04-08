@@ -75,11 +75,11 @@ export const uptopContent = {
       <br />
       <div className="videoContainer">
         <div className="vidCard flex-column align-center overflow-hidden" >
-          <video autoPlay loop muted playsInline style={{ width: '150%' }} src="https://liveuptop.com/video/paperwork-desktop.mp4" />
+          <video autoPlay loop muted playsInline style={{ width: '150%' }} src={require("../../assets/videos/uptop-app.mp4")} />
           Built a dynamic rental application form such that landlords could customize what it would look like to applicants and had the ability to save templates for future use.
       </div>
         <div className="vidCard flex-column align-center overflow-hidden">
-          <video autoPlay loop muted playsInline style={{ width: '150%' }} src="https://liveuptop.com/video/maintenance-desktop.mp4" />
+          <video autoPlay loop muted playsInline style={{ width: '150%' }} src={require("../../assets/videos/uptop-views.mp4")} />
           Created a number of views and modals for this CMS (Content Management Service) that included tables, grids, and forms where landlords could manage listings, tenants, and payments.
       </div>
       </div>
