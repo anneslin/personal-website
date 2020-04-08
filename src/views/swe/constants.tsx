@@ -69,7 +69,7 @@ export const uptopContent = {
   title: 'Full-Stack Engineer',
   techs: [tech.TypeScript, tech.React, tech.Redux, tech.Bootstrap, tech.Less, tech.ReactNative, tech.CSharp],
   description:
-    <div className="blurb justified">
+    <div className="blurb justified pb-3">
       As a freshly-graduated software engineer, I was tasked with scrapping the entire front-end that was originally built with HTML and CSS and building from the ground up what is now the website that one half of the client base uses: <a className="decoratedLink" href="https://manage.liveuptop.com/" target="_blank">the landlord portal.</a> This site was built in Typescript with React, managed with Redux, and styled with Bootstrap and Less CSS for custom styling.
     <br/>
     <br/>
@@ -97,7 +97,7 @@ export const clarkContent = {
   title: 'Full-Stack Engineer',
   techs: [tech.TypeScript, tech.React, tech.Redux, tech.Sass, tech.Jest, tech.Ruby, tech.Rails, tech.Graphql],
   description:
-  <div className="blurb justified">
+  <div className="blurb justified pb-3">
     Clark will forever and always have a place in my heart, for the team was filled with the most pleasant and encouraging people I had had the pleasure of working with. The CTO entrusted me with the task to lead the engineering effort on a north star project which aimed to simplify and automate the matching process for shoppers (students and parents looking for tutors). This entailed working closely with design and project management to plan, organize, and implement numerous releases with the engineering team.
     <br/>
     <br/>
@@ -123,6 +123,6 @@ export const domioContent = {
   companyName: 'Domio',
   title: 'Full-Stack Engineer',
   techs: [tech.TypeScript, tech.React, tech.Redux, tech.Sass, tech.ReactNative, tech.Python],
-  description: <div className="blurb justified">Made performance corrections on a front page of an internal site, such as reduced the number of calls from n^n (unnecessary repeated requests) to n (minimum necessary requests), worked on lazy loading due to the massive amount of data being loaded, and corrected other repeated hooks due to poor code design. Introduced stricter typing in project and pushed for more sustainable code, curbing tech debt in an already riddled code base. Contributed to company ui and utils react-native-first library.  Completed all backend tasks (completed with thorough tests) in Python with sqlAlchemy that were coupled with respective frontend work and created more efficient ways to get data</div>
+  description: <div className="blurb justified pb-3">Made performance corrections on a front page of an internal site, such as reduced the number of calls from n^n (unnecessary repeated requests) to n (minimum necessary requests), worked on lazy loading due to the massive amount of data being loaded, and corrected other repeated hooks due to poor code design. Introduced stricter typing in project and pushed for more sustainable code, curbing tech debt in an already riddled code base. Contributed to company ui and utils react-native-first library.  Completed all backend tasks (completed with thorough tests) in Python with sqlAlchemy that were coupled with respective frontend work and created more efficient ways to get data</div>
 }
 

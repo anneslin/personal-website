@@ -18,14 +18,12 @@
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   margin-bottom: 1rem;
 }
 
 .title {
   width: 200px;
+  float: right;
 }
 
 .sub-title{
@@ -92,3 +90,7 @@
   }
 
 }
+
+.pb-3 {
+  padding-bottom: 3rem;
+} 
