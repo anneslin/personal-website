@@ -21,7 +21,7 @@ const App = () => {
   const style = (swePath || creativePath) ? { backgroundColor: background, backgroundImage: 'none' } : {}
   return (
     <div className="container" style={style}>
-      <TopBar underlay={creativePath != null} />
+      <TopBar underlay={swePath != null || creativePath != null} />
       <SideBar underlay={creativePath != null} />
       <Switch>
         <Route path="/creative/body" component={Body} />

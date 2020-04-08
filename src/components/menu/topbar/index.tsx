@@ -26,7 +26,12 @@ const TopBar = ({ underlay }: { underlay: boolean }) => {
 
   return (
     <TopBarContainer underlay={underlay}>
+
         <SectionItemsContainer>
+          <Logo
+            to="/" onClick={() => setSelectedSection(null)}>
+            <img src={require('../../../assets/imgs/logos/icon-a.png')} role="presentation" title='Home' />
+          </Logo>
           {sideBarSections.map(x =>
             <SectionItem
               key={sections[x]} onClick={() => setSelectedSection(x)} isSelected={x === selectedSection}>
@@ -49,7 +54,10 @@ const TopBarContainer = styled.div<{underlay: boolean}>`
   display: none;
   @media (max-width: 768px) {
     display: block;
-    ${props => props.underlay && `background-color: ${background}; opacity: 0.75;`
+    ${props => props.underlay && `
+    background-color: ${background};
+    opacity: 1;
+    box-shadow: 0px 11px 20px -15px #b3ae9a;`
   }
 `;
 
@@ -96,4 +104,11 @@ const SubSectionItemLink = styled(Link)`
 const SubSectionItem = styled.a`
   ${linkStyles}
 `;
+const Logo = styled(Link)`
+  padding-left: 1rem;
+  margin: auto;
+  img {
+    height: 15px;
+  }
+}`
 export default TopBar;
