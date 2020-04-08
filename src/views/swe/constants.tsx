@@ -96,7 +96,26 @@ export const clarkContent = {
   companyName: 'Clark',
   title: 'Full-Stack Engineer',
   techs: [tech.TypeScript, tech.React, tech.Redux, tech.Sass, tech.Jest, tech.Ruby, tech.Rails, tech.Graphql],
-  description: <div className="blurb justified">Led engineering on a North Star project which aimed to simplify and automate the matching process for shoppers. This entailed working closely with design and project management to plan, organize, and implement numerous releases with the engineering team. Implemented integrations with tools such as Segment, Autopilot, Zapier. Implemented a public API from which our GatsbyJS static site could handle payments, tracking, and matching using Ruby on Rails. Used code splitting to move toward having a mono-repo. Helped transition from using JSONAPI to using GraphQL in order to improve client load times</div>
+  description:
+  <div className="blurb justified">
+    Clark will forever and always have a place in my heart, for the team was filled with the most pleasant and encouraging people I had had the pleasure of working with. The CTO entrusted me with the task to lead the engineering effort on a north star project which aimed to simplify and automate the matching process for shoppers (students and parents looking for tutors). This entailed working closely with design and project management to plan, organize, and implement numerous releases with the engineering team.
+    <br/>
+    <br/>
+    <div className="videoContainer">
+      <div className="vidCard flex-column align-center overflow-hidden">
+        <video autoPlay loop muted playsInline style={{ width: '100%' }} src={require("../../assets/videos/clark-matching.mp4")}/>
+        Maintained our GatsbyJs site with Contentful and built the flow to automate shopping for a tutor. This was completed with Calendly integrations and proper user tracking to enable re-engagement via Autopilot.
+      </div>
+    </div>
+    <br/>
+    I also implemented integrations with tools such as Segment, Autopilot, and Zapier to further bridge the gap between the team and the customers using tracking and communication as the vehicle. With Ruby on Rails, I created a public API from which our GatsbyJS static site could handle payments with Stripe, tracking, and matching.
+    <br/>
+    <br/>
+    We had multiple projects separated across multiple repositories, and after some research, a teammate and I used code splitting to move toward having a mono-repo. This helped us reduce reusing code and increased visibility of existing work. We were able to achieve this by deploying with an env variable that was used at the entry point of the project to determine the proper respective routes to be lazy imported, therefore only loading files that are needed.
+    <br/>
+    <br/>
+    Partook in the transition from using JSONAPI to using GraphQL for both front- and back-end in order to improve client load times.
+  </div>
 }
 export const domioContent = {
   companyUrl: 'https://www.staydomio.com/',

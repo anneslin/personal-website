@@ -68,8 +68,8 @@
   border-radius: 10px;
 }
 
-.vidCard:first-of-type {
-  margin: 0 1rem 0 0;
+.vidCard:not(:first-of-type) {
+  margin: 0 0 0 1rem;
 }
 
 @media (max-width: 768px) {
@@ -87,8 +87,8 @@
     flex-direction: column;
   }
 
-  .vidCard:first-of-type {
-    margin: 0 0 2rem 0;
+  .vidCard:not(:first-of-type) {
+    margin: 2rem 0 0 0;
   }
 
 }
