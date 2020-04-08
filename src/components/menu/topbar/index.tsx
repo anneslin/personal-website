@@ -30,7 +30,7 @@ const TopBar = ({ underlay }: { underlay: boolean }) => {
         <SectionItemsContainer>
           <Logo
             to="/" onClick={() => setSelectedSection(null)}>
-            <img src={require('../../../assets/imgs/logos/icon-a.png')} role="presentation" title='Home' />
+            <img src='http://anneslin.com/assets/imgs/logos/icon-a.png' role="presentation" title='Home' />
           </Logo>
           {sideBarSections.map(x =>
             <SectionItem
