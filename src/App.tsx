@@ -25,6 +25,7 @@ const App = () => {
       <SideBar underlay={creativePath != null} />
       <Switch>
         <Route path="/creative/body" component={Body} />
+        <Route path="/creative/visual" component={Home} />
         <Route path="/creative/words" component={Home} />
         <Route path="/swe/domio"><Swe domio /></Route>
         <Route path="/swe/uptop"><Swe uptop /></Route>

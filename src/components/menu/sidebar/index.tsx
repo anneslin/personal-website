@@ -14,14 +14,16 @@ const SideBar = ({ underlay }: { underlay: boolean }) => {
   const getSubSectionItems = () => {
     const subSects = getSubSections(selectedSection);
     return selectedSection && subSects.map((x: subSections) =>
-      x === subSections.words ? (
-        <SubSectionItem href='https://medium.com/@annelin' target="_blank">words</SubSectionItem>
-      ) : (
-          <SubSectionItemLink
-            to={`/${sectionUrl[selectedSection]}/${subSectionUrl[x]}`}>
-            {subSectionText[x]}
-          </SubSectionItemLink>
-        ));
+      x === subSections.visual ? (
+        <SubSectionItem href='https://www.instagram.com/a.fartist/' target="_blank">visual</SubSectionItem>
+      ) : x === subSections.words ? (
+          <SubSectionItem href='https://medium.com/@annelin' target="_blank">words</SubSectionItem>
+        ) : (
+            <SubSectionItemLink
+              to={`/${sectionUrl[selectedSection]}/${subSectionUrl[x]}`}>
+              {subSectionText[x]}
+            </SubSectionItemLink>
+          ));
   };
 
   return (

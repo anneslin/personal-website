@@ -14,38 +14,40 @@ const TopBar = ({ underlay }: { underlay: boolean }) => {
   const getSubSectionItems = () => {
     const subSects = getSubSections(selectedSection);
     return selectedSection && subSects.map((x: subSections) =>
-      x === subSections.words ? (
+      x === subSections.visual ? (
+        <SubSectionItem href='https://www.instagram.com/a.fartist/' target="_blank">visual</SubSectionItem>
+      ) : x === subSections.words ? (
         <SubSectionItem href='https://medium.com/@annelin' target="_blank">words</SubSectionItem>
       ) : (
-          <SubSectionItemLink
-            to={`/${sectionUrl[selectedSection]}/${subSectionUrl[x]}`} onClick={() => setSelectedSection(null)}>
-            {subSectionText[x]}
-          </SubSectionItemLink>
-        ));
+            <SubSectionItemLink
+              to={`/${sectionUrl[selectedSection]}/${subSectionUrl[x]}`} onClick={() => setSelectedSection(null)}>
+              {subSectionText[x]}
+            </SubSectionItemLink>
+          ));
   };
 
   return (
     <TopBarContainer underlay={underlay}>
 
-        <SectionItemsContainer>
-          <Logo
-            to="/" onClick={() => setSelectedSection(null)}>
-            <img src='http://anneslin.com/assets/imgs/logos/icon-a.png' role="presentation" title='Home' />
-          </Logo>
-          {sideBarSections.map(x =>
-            <SectionItem
-              key={sections[x]} onClick={() => setSelectedSection(x)} isSelected={x === selectedSection}>
-              {sectionText[x]}
-            </SectionItem>)}
-        </SectionItemsContainer>
-        <SubSectionItemsContainer isSelected={selectedSection != null}>
-          {getSubSectionItems()}
-        </SubSectionItemsContainer>
+      <SectionItemsContainer>
+        <Logo
+          to="/" onClick={() => setSelectedSection(null)}>
+          <img src='http://anneslin.com/assets/imgs/logos/icon-a.png' role="presentation" title='Home' />
+        </Logo>
+        {sideBarSections.map(x =>
+          <SectionItem
+            key={sections[x]} onClick={() => setSelectedSection(x)} isSelected={x === selectedSection}>
+            {sectionText[x]}
+          </SectionItem>)}
+      </SectionItemsContainer>
+      <SubSectionItemsContainer isSelected={selectedSection != null}>
+        {getSubSectionItems()}
+      </SubSectionItemsContainer>
     </TopBarContainer>
   );
 };
 
-const TopBarContainer = styled.div<{underlay: boolean}>`
+const TopBarContainer = styled.div<{ underlay: boolean }>`
   color: ${primary};
   position: absolute;
   top: 0;
@@ -65,7 +67,7 @@ const SectionItemsContainer = styled.div`
   display: flex;
   width: 100%;
 `;
-const SectionItem = styled.div<{isSelected: boolean}>`
+const SectionItem = styled.div<{ isSelected: boolean }>`
   padding: 10px 0 
   flex: 1;
   text-align: center;
@@ -79,7 +81,7 @@ const SectionItem = styled.div<{isSelected: boolean}>`
     color: ${secondary};
   }
 `;
-const SubSectionItemsContainer = styled.div<{isSelected: boolean}>`
+const SubSectionItemsContainer = styled.div<{ isSelected: boolean }>`
   text-align: center;
   flex: 1;
   ${props => props.isSelected ? 'margin-bottom: 1rem;' : ''

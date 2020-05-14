@@ -5,6 +5,7 @@ export enum sections {
 }
 export enum subSections {
   body = 1,
+  visual,
   words,
   domio,
   clark,
@@ -26,6 +27,7 @@ export const sectionText = {
 
 export const subSectionUrl = {
   [subSections.body]: "body",
+  [subSections.visual]: "visual",
   [subSections.words]: "words",
   [subSections.domio]: "domio",
   [subSections.clark]: "clark",
@@ -36,6 +38,7 @@ export const subSectionUrl = {
 
 export const subSectionText = {
   [subSections.body]: "body",
+  [subSections.visual]: "visual",
   [subSections.words]: "words",
   [subSections.domio]: "dōmio",
   [subSections.clark]: "clark",
